@@ -29,10 +29,12 @@ html, body {
 .left, .right {
     display: flex;
     gap: 16px;
+    align-items: center;
 }
 
-.left {
-    align-items: center;
+.right {
+    align-self: flex-start;
+    padding-top: 10px;
 }
 
 
@@ -93,6 +95,7 @@ a {
 
 .menu{
     text-align: center;
+    height: 100vh;
 }
 
 .pizza {
@@ -123,9 +126,58 @@ a {
 .menu-name {
     font-size: 32px;
     font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 24px;
+    text-align: justify;
+    background-color: rgb(248, 208, 172, 0.7);
+}
+
+.about p {
+    max-width: 800px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40vh;
+    font-size: 30px;
+}
+
+.contacts a{
+    color: #000;
+    font-size: 18px;
+}
+
+
+.contacts-item div {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    gap: 15px;
+}
+
+.contacts-item p {
+    margin-bottom: 0;
+}
+
+.email img {
+    margin-bottom: -12px;
 }
 
 .footer {
     background-color:rgb(23, 23, 35) ;
     color: white;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    font-size: 18px;
 }
